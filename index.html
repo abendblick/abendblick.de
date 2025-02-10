@@ -1,48 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div class="frame text-xl min-h-[100dvh] bg-orange-400 p-2 sm: p4">
-        <div class="top-left">Home</div>
-        <div class="top-right">Termine</div>
-        <div class="bot-left">Kontakt</div>
-        <div class="bot-right">FAQ</div>
-        <main class="m-8 my-20 sm:m-20 flex flex-col gap-16  prose overflow-auto">
-          <section class="flex flex-col gap-4">
-            <h1 class="text-3xl">Abendblick Musik bietet eine bunte Bühne für Musizierende, wo alle willkommen sind.</h1>
-            <h3>Nächster Termin: 10.12.24 19:00 Uhr</h3>
-          </section>
-      
-          <section class="flex flex-col gap-4">
-            <h2 class="text-3xl">Wir bieten:</h2>
-            <ul class="list-inside">
-              <li class="list-disc">Eine Bühne mit Audioequipment, Klavier und Mikrofonen</li>
-              <li class="list-disc">Sitzplätze für ca 60 Gäste</li>
-              <li class="list-disc">Getränke auf Spendenbasis</li>
-              <li class="list-disc">Eine warmherzige Community die Lust auf Musik hat</li>
-              <li class="list-disc">6 Acts a 15 Minuten + Jam Session</li>
-            </ul>
-            <h2>Komm vorbei und lass dich in wohliger Stimmung von einmaligen Acts verzaubern</h2>
-          </section>
-      
-          <section class="flex flex-col gap-4">
-            <h2 class="text-3xl">Du möchtest bei uns auftreten?</h2>
-            <p>Dann melde dich mit folgenden Infos bei uns und reserviere deinen Slot.</p>
-            <ul class="list-inside">
-              <li class="list-disc">Wie möchtest du deine 15 Minuten gestalten?</li>
-              <li class="list-disc">Welche technische Austattung benötigst du?</li>
-              <li class="list-disc">Wie können wir dich am besten erreichen?</li>
-            </ul>
-          </section>
-        </main>
-      </div>
+  <body class="overflow-auto">
+    <header class="absolute left-0 w-full h-[60px] sm:h-[80px] md:h-[120px]">
+      <div class="w-full h-full bg-left bg-contain bg-no-repeat bg-[url(left.png)]"></div>
+    </header>
+    <header class="absolute right-0 w-full h-[60px] sm:h-[80px] md:h-[120px]">
+      <div class="w-full h-full bg-right bg-contain bg-no-repeat bg-[url(right.png)]"></div>
+    </header>
+    <header class="pb-10 py-10 w-full h-[25dvh] bg-white">
+      <div class="w-full h-full bg-center bg-contain bg-no-repeat bg-[url(header.png)]"></div>
+    </header>
+    <div class="grid justify-centerframe text-center font-serif px-2 sm: p4">
+      <main class="mx-8 sm:mx-20 max-w-screen-md grid grid-cols-2 gap-8 prose overflow-auto">
+        <section class="col-span-2 flex flex-col items-center gap-4">
+          <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">Was?</header>
+          <p>
+            Wir holen begeisterte MusikerInnen auf die Bühne, die ein buntes Programm für Dich
+            zaubern werden - also lass Dich überraschen!
+          </p>
+        </section>
+        <section class="col-span-1 flex flex-col items-center gap-4">
+          <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">Wann?</header>
+          <div>
+            <p class="font-semibold">14.02.2025</p>
+            <p>Einlass: 18:30 Uhr</p>
+            <p class="font-semibold">Beginn: 18:45 Uhr</p>
+            <p class="center font-semibold -rotate-25 text-yellow-500/75 text-xl
+            ">&</p>
+            <p class="font-semibold">28.04.2025</p>
+            <p>Einlass: 18:30 Uhr</p>
+            <p class="font-semibold">Beginn: 18:45 Uhr</p>
+          </div>
+        </section>
+        <section class="col-span-1 flex flex-col items-center gap-4">
+          <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">Wo?</header>
+          <div>
+            <p>In der gemütlichen</p>
+            <p>Taranta Babu</p>
+            <p>Amalienstraße 33</p>
+            <p>44137 Dortmund</p>
+          </div>
+        </section>
+        <section class="col-span-2 flex flex-col items-center gap-4">
+          <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+            Möchtest du auftreten?
+          </header>
+          <div>
+            <p>
+              Melde Dich gerne per <a href="mailto:abendblick.musik@proton.me">Mail</a> oder
+              <a href="instagram.com/abendblick.musik">Instagram</a> bei uns, wenn du alleine oder
+              mit Freunden auftreten möchtest! Jede Musik ist willkommen:) E-Piano, Mikros,
+              Verstärker usw. sind vorhanden. Bei Fragen melde Dich gerne bei uns.
+            </p>
+          </div>
+        </section>
+        <section class="pb-10 col-span-2 flex flex-col items-center gap-4">
+          <details class="px-4 border-2 rounded border-orange-500/50">
+            <summary class="px-4 rounded-sm text-xl font-[600]">FAQ</summary>
+            <div class="grid p-4 gap-4">
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Was ist die Abendblick-Musik?
+                </header>
+                <div>
+                  <p>
+                    Mit der Abendblick-Musik wollen wir Musiker*innen die Gelegenheit geben, sich
+                    auf einer kleinen Bühne in gemütlicher und wertschätzender Atmosphäre
+                    auszuprobieren. Man kann sich bei einem Getränk connecten und wenn die Zeit da
+                    ist, gemeinsam Musik machen.
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wann findet Abendblick-Musik statt?
+                </header>
+                <div>
+                  <p>
+                    Wir veranstalten die Abendblick-Musik im Abstand von ca. zwei Monaten an
+                    wechselnden Wochentagen.
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wie kann ich mitmachen?
+                </header>
+                <div>
+                  <p>
+                    Schreib uns eine Nachricht per Instagram / E-Mail oder sprich uns persönlich an.
+                    Ab der Bekanntgabe des nächsten Termins könnt ihr euch bei uns melden.
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wer kann mitmachen?
+                </header>
+                <div>
+                  <p>
+                    Im Prinzip jeder: egal ob du das erste Mal auf der Bühne stehst oder das
+                    Rampenlicht gewöhnt bist, ob jung oder alt, egal welches Genre du spielst, egal
+                    ob instrumental oder mit Gesang und egal ob es deine eigenen Songs oder Covers
+                    sind. Nicht geduldet sind natürlich extrimistische Inhalte jeglicher Form.
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Ist es möglich, mit mehreren Leuten aufzutreten?
+                </header>
+                <div>
+                  <p>
+                    Ja. Durch die Wohnzimmeratmosphäre und den verfügbaren Platz sind wir jedoch
+                    etwas eingeschränkt, was größere Gruppen betrifft. Schreibt uns und wir schauen
+                    was möglich ist!
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wie lange geht das Programm?
+                </header>
+                <div>
+                  <p>
+                    Pro Auftritt planen wir 10 bis maximal 15 Minuten ein, wobei ihr nicht die volle
+                    Zeit ausschöpfen müsst.
+                  </p>
+                </div>
+              </section>
+
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wofür werden Spenden und Eintrittsgelder verwendet?
+                </header>
+                <div>
+                  <p>Für die Finanzierung von Snacks/ Getränken, Raummiete und der GEMA.</p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Muss ich etwas an Equipment mitbringen?
+                </header>
+                <div>
+                  <p>
+                    Das eigene Instrument (außer E-Piano), und Technik, die über die Verstärkung
+                    durchs Mischpult hinausgeht.
+                  </p>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wie barrierefrei ist die Location?
+                </header>
+                <div>
+                  <ul>
+                    <li>Eingang hat fünf Treppenstufen</li>
+                    <li>Hauptraum ist ebenerdig</li>
+                    <li>Toiletten sind auf der gleichen Etage, jedoch räumlich sehr begrenzt.</li>
+                  </ul>
+                </div>
+              </section>
+              <section class="col-span-2 flex flex-col items-center gap-4">
+                <header class="px-4 rounded-sm text-xl font-[600] bg-yellow-500/50">
+                  Wie lange geht ein Abend?
+                </header>
+                <div>
+                  <p>Nach den Acts lassen wir den Abend gemeinsam bist 22 Uhr ausklingen.</p>
+                </div>
+              </section>
+            </div>
+          </details>
+        </section>
+        <!-- <div>
+
+            <section class="flex flex-col gap-4">
+              <h1 class="text-3xl">Abendblick Musik bietet eine bunte Bühne für Musizierende, wo alle willkommen sind.</h1>
+              <h3>Nächste Termine:</h3>
+              <p>14.02.25 18:30 Uhr</p>
+              <p>28.03.25 18:30 Uhr</p>
+            </section>
+        
+            <section class="flex flex-col gap-4">
+              <h2 class="text-3xl">Wir bieten:</h2>
+              <ul class="list-inside">
+                <li class="list-disc">Eine Bühne mit Audioequipment, Klavier und Mikrofonen</li>
+                <li class="list-disc">Sitzplätze für ca 60 Gäste</li>
+                <li class="list-disc">Getränke auf Spendenbasis</li>
+                <li class="list-disc">Eine warmherzige Community die Lust auf Musik hat</li>
+                <li class="list-disc">6 Acts a 15 Minuten + Jam Session</li>
+              </ul>
+              <h2>Komm vorbei und lass dich in wohliger Stimmung von einmaligen Acts verzaubern.</h2>
+            </section>
+        
+            <section class="flex flex-col gap-4">
+              <h2 class="text-3xl">Du möchtest bei uns auftreten?</h2>
+              <p>Dann melde dich mit folgenden Infos bei uns und reserviere deinen Slot.</p>
+              <ul class="list-inside">
+                <li class="list-disc">Wie möchtest du deine 15 Minuten gestalten?</li>
+                <li class="list-disc">Welche technische Austattung benötigst du?</li>
+                <li class="list-disc">Wie können wir dich am besten erreichen?</li>
+              </ul>
+              <div class="flex gap-16">
+                <img src="/letter.png" height="20px" width="20px" alt="" srcset="">
+                <img src="/instagram.png" height="20px" width="20px" alt="" srcset="">
+              </div>
+            </section>
+          </div> -->
+      </main>
+    </div>
   </body>
 </html>
-
-
-  
