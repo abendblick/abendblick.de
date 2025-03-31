@@ -1,15 +1,23 @@
-.frame {
-  display: grid;
-  grid: 
-  "tl tr" 1fr
-  "bl br" 1fr
-  / 1fr 1fr
-  ;
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-a{
-text-decoration: underline;
-color: rgb(234 179 8);
+.frame {
+  display: grid;
+  grid:
+    "tl tr" 1fr
+    "bl br" 1fr
+    / 1fr 1fr;
+}
+
+a {
+  text-decoration: underline;
+  color: rgb(234 179 8);
 }
 
 main {

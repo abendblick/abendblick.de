@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import header_left from "../assets/header_left.png";
+import header_right from "../assets/header_right.png";
+import noten from "../assets/noten.png";
+import logo from "../assets/logo.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+
+        <!-- HTML Meta Tags -->
+        <title>Abendblick</title>
+        <meta name="description" content="" />
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://abendblick.de" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/logo.png" />
+        <meta property="og:title" content="Abendblick-Musik" />
+        <meta
+            property="og:description"
+            content="Die Website der Abendblick-Musik Veranstaltung im gemütlichen Taranta Babu"
+        />
+    </head>
+    <body class="flex flex-col overflow-auto bg-white dark:bg-neutral-800 dark:text-gray-300">
+        <div class="absolute flex justify-between w-full">
+            <Image class="col-span-1" height="100%" src={header_left} alt="" />
+            <Image class="col-span-1" height="100%" src={header_right} alt="" />
+        </div>
+
+        <header
+            class="flex justify-center place-items-center my-10 w-full h-[60px] sm:h-[80px] md:h-[160px]"
+        >
+            <Image class="" height="50%" src={noten} alt="noten" />
+            <Image class="" height="100%" src={logo} alt="Logo" />
+            <Image class="" height="50%" src={noten} alt="noten" />
+        </header>
+
+        <slot />
+
+        <footer class="bottom-0 p-4 flex justify-center w-full gap-4">
+            <a href="/">Home</a>
+            <a href="/team">Team</a>
+            <a href="/faq">FAQ</a>
+        </footer>
+    </body>
+</html>
