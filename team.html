@@ -36,6 +36,13 @@
         text-decoration: underline;
         color: rgb(234 179 8);
       }
+
+      main img {
+        border-radius: 4px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body
@@ -59,49 +66,42 @@
     </header>
 
     <main
-      class="row-start-4 row-end-11 mx-12 grid max-w-screen-md grid-cols-2 gap-8 justify-self-center sm:mx-20"
+      class="row-start-4 row-end-11 mx-12 grid max-w-screen-md sm:grid-cols-2 gap-8 justify-self-center sm:mx-20"
     >
-      <section class="col-span-2 flex flex-col items-center gap-4">
-        <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Was?</header>
-        <p>
-          Wir holen begeisterte MusikerInnen auf die Bühne, die ein buntes Programm für Dich zaubern
-          werden - also lass Dich überraschen!
+    <header class="flex flex-col items-center gap-4 sm:col-span-2">
+        <h1 class="text-center text-3xl font-bold">Team</h1>
+        <p class="text-center text-lg">
+          Wir organisieren den Abendblick seit ????.
         </p>
-      </section>
-      <section class="col-span-1 flex flex-col items-center gap-4">
-        <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Wann?</header>
-        <div>
-          <p class="font-semibold">14.02.2025</p>
-          <p>Einlass: 18:30 Uhr</p>
-          <p class="font-semibold">Beginn: 18:45 Uhr</p>
-          <p class="center -rotate-25 text-xl font-semibold text-yellow-500/75">&</p>
-          <p class="font-semibold">28.03.2025</p>
-          <p>Einlass: 18:30 Uhr</p>
-          <p class="font-semibold">Beginn: 18:45 Uhr</p>
-        </div>
-      </section>
-      <section class="col-span-1 flex flex-col items-center gap-4">
-        <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Wo?</header>
-        <div>
-          <p>In der gemütlichen</p>
-          <p>Taranta Babu</p>
-          <p>Amalienstraße 33</p>
-          <p>44137 Dortmund</p>
-        </div>
-      </section>
-      <section class="col-span-2 flex flex-col items-center gap-4">
-        <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">
-          Möchtest du auftreten?
-        </header>
-        <div>
-          <p>
-            Melde Dich gerne per <a href="mailto:abendblick.musik@proton.me">Mail</a> oder
-            <a href="https://instagram.com/abendblick.musik">Instagram</a> bei uns, wenn du alleine
-            oder mit Freunden auftreten möchtest! Jede Musik ist willkommen:) E-Piano, Mikros,
-            Verstärker usw. sind vorhanden. Bei Fragen melde Dich gerne bei uns.
-          </p>
-        </div>
-      </section>
+      </header>
+      <div>
+        <img src="assets/team/Anton.jpg" alt="Antons Bild" />
+        <h1 class="text-center text-xl font-bold">Anton</h1>
+        <p class="text-center text-lg">
+          Hier könntest du dein Kuscheltier beschreiben.
+        </p>
+      </div>
+      <div>
+        <img src="assets/team/Ariane.jpg" alt="Arianes Bild" />
+        <h1 class="text-center text-xl font-bold">Ariane</h1>
+        <p class="text-center text-lg">
+          Hier könntest du dein Kuscheltier beschreiben.
+        </p>
+      </div>
+      <div>
+        <img src="assets/team/Helen.jpg" alt="Helens Bild" />
+        <h1 class="text-center text-xl font-bold">Helen</h1>
+        <p class="text-center text-lg">
+          Hier könntest du dein Kuscheltier beschreiben.
+        </p>
+      </div>
+      <div>
+        <img src="assets/team/Hannah.jpg" alt="Hannahs Bild" />
+        <h1 class="text-center text-xl font-bold">Hannah</h1>
+        <p class="text-center text-lg">
+          Hier könntest du dein Kuscheltier beschreiben.
+        </p>
+      </div>
     </main>
 
     <footer class="row-start-11 row-end-12 flex justify-center gap-4 p-8">
