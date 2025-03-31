@@ -39,27 +39,29 @@
     </style>
   </head>
   <body
-    class="m-0 h-full min-h-[100dvh] w-full overflow-auto bg-white text-center font-serif dark:bg-gray-900 dark:text-white"
+    class="m-0 h-full min-h-[100dvh] w-full overflow-auto bg-white text-center font-serif dark:bg-neutral-800 dark:text-white"
   >
-    <div class="flex col-span-full row-start-1 row-end-2 h-[60px] sm:h-[80px] md:h-[120px]">
+    <div class="col-span-full row-start-1 row-end-2 flex h-1/4 md:h-1/2">
       <!-- <a class="absolute left-0 place-self-center text-black no-underline -rotate-25" href="/">Team</a> -->
       <img class="h-full" src="assets/header_left.png" alt="" />
     </div>
-    <div
-      class="col-span-full row-start-1 row-end-2 flex h-[60px] justify-end sm:h-[80px] md:h-[120px]"
-    >
+    <div class="col-span-full row-start-1 row-end-2 flex h-1/4 justify-end md:h-1/2">
       <!-- <a class="absolute top-8 right-8 text-black text-xl no-underline rotate-22" href="/">FAQ</a> -->
       <img class="h-full" src="assets/header_right.png" alt="" />
     </div>
 
-    <header class="h-50 col-span-full row-start-1 row-end-3 w-full py-10 pb-10">
-      <a href="/">
-        <div class="h-full bg-[url(header.png)] bg-contain bg-center bg-no-repeat"></div>
+    <header
+      class="h-45 col-span-full row-start-1 row-end-3 w-full self-center py-8 md:h-60 md:py-10"
+    >
+      <a class="flex aspect-square h-full w-full items-center justify-center gap-2" href="/">
+        <img class="h-1/2" src="assets/noten.png" alt="" />
+        <img class="h-full" src="assets/logo.png" alt="" />
+        <img class="h-1/2" src="assets/noten.png" alt="" />
       </a>
     </header>
 
     <main
-      class="row-start-4 row-end-11 mx-12 grid max-w-screen-md grid-cols-2 gap-8 justify-self-center sm:mx-20"
+      class="row-start-3 row-end-11 mx-12 grid max-w-screen-md grid-cols-2 gap-8 justify-self-center sm:mx-20"
     >
       <section class="col-span-2 flex flex-col items-center gap-4">
         <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Was?</header>
@@ -83,7 +85,10 @@
       <section class="col-span-1 flex flex-col items-center gap-4">
         <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Wo?</header>
         <div>
-          <p>In der gemütlichen</p>
+          <p>Taranta Babu</p>
+          <p>Amalienstraße 33</p>
+          <p>44137 Dortmund</p>
+          <p class="center -rotate-25 text-xl font-semibold text-yellow-500/75">&</p>
           <p>Taranta Babu</p>
           <p>Amalienstraße 33</p>
           <p>44137 Dortmund</p>
