@@ -11,6 +11,12 @@
       "datum": "22.01.2027",
       "einlass": "18:30",
       "beginn": "18:45"
+    },
+    {
+      "stadt": "Test",
+      "datum": "24.11.2026",
+      "einlass": "18:30",
+      "beginn": "18:45"
     }
   ],
   "adressen": [
