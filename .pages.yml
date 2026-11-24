@@ -3,14 +3,14 @@
 content:
   - name: termine
     label: Termine & Adressen
-    description: Hier die nächsten Termine und Adressen eintragen. Nach dem Speichern ist die Website in 1–2 Minuten aktualisiert.
+    description: "Hier die nächsten Termine und Adressen eintragen. Nach dem Speichern ist die Website in 1–2 Minuten aktualisiert."
     type: file
     path: _data/termine.json
     format: json
     fields:
       - name: hinweis
         label: Hinweis über den Terminen
-        description: Optional, z. B. „Wir haben Sommerpause!“. Leer lassen, wenn kein Hinweis angezeigt werden soll.
+        description: "Optional, z. B. „Wir haben Sommerpause!“. Leer lassen, wenn kein Hinweis angezeigt werden soll."
         type: string
       - name: termine
         label: Termine
@@ -42,7 +42,7 @@ content:
         fields:
           - name: name
             label: Ort / Name (fett gedruckt)
-            description: z. B. „Bochum: Quartiershalle in der KoFabrik e.V.“
+            description: "z. B. „Bochum: Quartiershalle in der KoFabrik e.V.“"
             type: string
             required: true
           - name: strasse
