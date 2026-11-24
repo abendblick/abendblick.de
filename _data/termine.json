@@ -1,15 +1,14 @@
 {
-  "hinweis": "",
   "termine": [
     {
-      "stadt": "Bochum",
-      "datum": "20.11.2026",
+      "stadt": "Dortmund",
+      "datum": "18.12.2026",
       "einlass": "18:30",
       "beginn": "18:45"
     },
     {
-      "stadt": "Dortmund",
-      "datum": "18.12.2026",
+      "stadt": "Bochum",
+      "datum": "22.01.2027",
       "einlass": "18:30",
       "beginn": "18:45"
     }
