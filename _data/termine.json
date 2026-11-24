@@ -1,0 +1,29 @@
+{
+  "hinweis": "",
+  "termine": [
+    {
+      "stadt": "Bochum",
+      "datum": "20.11.2026",
+      "einlass": "18:30",
+      "beginn": "18:45"
+    },
+    {
+      "stadt": "Dortmund",
+      "datum": "18.12.2026",
+      "einlass": "18:30",
+      "beginn": "18:45"
+    }
+  ],
+  "adressen": [
+    {
+      "name": "Bochum: Quartiershalle in der KoFabrik e.V.",
+      "strasse": "Stühmeyerstr. 33",
+      "ort": "44787 Bochum"
+    },
+    {
+      "name": "Dortmund: Werkhalle im Union Gewerbehof",
+      "strasse": "Huckarder Straße 2-12",
+      "ort": "44147 Dortmund"
+    }
+  ]
+}

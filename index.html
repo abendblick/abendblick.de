@@ -1,3 +1,6 @@
+---
+# Diese Zeilen sorgen dafür, dass GitHub Pages die Termine aus _data/termine.json einsetzt.
+---
 <!doctype html>
 <html>
   <head>
@@ -76,28 +79,35 @@
       <section class="col-span-1 flex flex-col items-center gap-4">
         <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Termine</header>
         <div>
-          <!-- <p class="font-semibold">Wir haben Sommerpause!</p> -->
-          <p class="font-semibold">Bochum</p>
-          <p class="font-semibold">20.11.2026</p>
-          <p class="font-semibold">Einlass: 18:30 Uhr</p>
-          <p class="font-semibold">Beginn: 18:45 Uhr</p>
+          {%- if site.data.termine.hinweis and site.data.termine.hinweis != "" %}
+          <p class="font-semibold">{{ site.data.termine.hinweis }}</p>
+          {%- endif %}
+          {%- for t in site.data.termine.termine %}
+          <p class="font-semibold">{{ t.stadt }}</p>
+          <p class="font-semibold">{{ t.datum }}</p>
+          {%- if t.einlass and t.einlass != "" %}
+          <p class="font-semibold">Einlass: {{ t.einlass }} Uhr</p>
+          {%- endif %}
+          {%- if t.beginn and t.beginn != "" %}
+          <p class="font-semibold">Beginn: {{ t.beginn }} Uhr</p>
+          {%- endif %}
+          {%- unless forloop.last %}
           <p class="center -rotate-25 text-xl font-semibold text-yellow-500/75">&</p>
-          <p class="font-semibold">Dortmund</p>
-          <p class="font-semibold">18.12.2026</p>
-          <p class="font-semibold">Einlass: 18:30 Uhr</p>
-          <p class="font-semibold">Beginn: 18:45 Uhr</p>
+          {%- endunless %}
+          {%- endfor %}
         </div>
       </section>
       <section class="col-span-1 flex flex-col items-center gap-4">
         <header class="rounded-sm bg-yellow-500/50 px-4 text-xl font-[600]">Adressen</header>
         <div>
-          <p class="font-semibold">Bochum: Quartiershalle in der KoFabrik e.V.</p>
-          <p>Stühmeyerstr. 33</p>
-          <p>44787 Bochum</p>
+          {%- for a in site.data.termine.adressen %}
+          <p class="font-semibold">{{ a.name }}</p>
+          <p>{{ a.strasse }}</p>
+          <p>{{ a.ort }}</p>
+          {%- unless forloop.last %}
           <p class="center -rotate-25 text-xl font-semibold text-yellow-500/75">&</p>
-          <p class="font-semibold">Dortmund: Werkhalle im Union Gewerbehof</p>
-          <p>Huckarder Straße 2-12</p>
-          <p>44147 Dortmund</p>
+          {%- endunless %}
+          {%- endfor %}
         </div>
       </section>
       <section class="col-span-2 flex flex-col items-center gap-4">

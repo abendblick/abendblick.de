@@ -1,0 +1,53 @@
+# Konfiguration für Pages CMS (https://app.pagescms.org)
+# Damit können Termine und Adressen ohne Code-Kenntnisse bearbeitet werden, auch vom Handy.
+content:
+  - name: termine
+    label: Termine & Adressen
+    description: Hier die nächsten Termine und Adressen eintragen. Nach dem Speichern ist die Website in 1–2 Minuten aktualisiert.
+    type: file
+    path: _data/termine.json
+    format: json
+    fields:
+      - name: hinweis
+        label: Hinweis über den Terminen
+        description: Optional, z. B. „Wir haben Sommerpause!“. Leer lassen, wenn kein Hinweis angezeigt werden soll.
+        type: string
+      - name: termine
+        label: Termine
+        type: object
+        list: true
+        fields:
+          - name: stadt
+            label: Stadt
+            type: string
+            required: true
+          - name: datum
+            label: Datum
+            type: date
+            required: true
+            options:
+              format: dd.MM.yyyy
+          - name: einlass
+            label: Einlass (Uhrzeit, z. B. 18:30)
+            type: string
+            default: "18:30"
+          - name: beginn
+            label: Beginn (Uhrzeit, z. B. 18:45)
+            type: string
+            default: "18:45"
+      - name: adressen
+        label: Adressen
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Ort / Name (fett gedruckt)
+            description: z. B. „Bochum: Quartiershalle in der KoFabrik e.V.“
+            type: string
+            required: true
+          - name: strasse
+            label: Straße und Hausnummer
+            type: string
+          - name: ort
+            label: PLZ und Ort
+            type: string
